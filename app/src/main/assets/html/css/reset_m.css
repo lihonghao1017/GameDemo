@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* base style */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+html { font-size: 75%; }
+body { background-color: #fff; font-family: '\5FAE\8F6F\96C5\9ED1', Helvetica; -webkit-text-size-adjust:none; color:#64544e; -webkit-font-smoothing:antialiased;  }
+body, p, h1, h2, dl, dt, dd{ font-size: 1rem; }
+table { border-collapse: collapse; border-spacing: 0; }
+audio, canvas, video { display: inline-block; *display: inline;*zoom: 1;}
+fieldset, img { border: 0 }          
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; font-variant: normal; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit;}
+input, textarea, select { *font-size:100%;}
+input[type="submit"],input[type="button"],input[type="text"],input[type="email"],input[type="number"],input[type="password"],select{ -webkit-appearance:none; appearance:none; }
+a, a:hover { text-decoration: none; }
+a:focus { outline: none; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.pb0{ padding-bottom:0 !important;}
+.pb5{ padding-bottom:5px !important;}
+.pb10{ padding-bottom: 10px !important;}
+.pb15{ padding-bottom: 15px !important;}
+.pb20{ padding-bottom: 20px !important;}
+.mb0{ margin-bottom: 0 !important;}
+.mb5{ margin-bottom: 5px !important;}
+.mb10{ margin-bottom: 10px !important;}
+.mb15{ margin-bottom: 15px !important;}
+.mb20{ margin-bottom: 20px !important;}
+.mt45{ margin-top: 45px !important;}
+.tal{ text-align:left;}
+.tar{ text-align:right;}
+.tac{ text-align:center;}
+.tindent{ text-indent:0 !important;}
+.fl{ float: left; }
+.fr{ float: right; }

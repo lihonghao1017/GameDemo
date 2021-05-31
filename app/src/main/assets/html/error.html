@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SDK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="css/style.css" rel="stylesheet" />
+	<!--[if IE]>
+	   <script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<style>
+</style>
+</head>
+<body>
+	<header class="home">
+		<div class="wrap">
+			<h1 class="logo"><a href="#">雷霆游戏</a></h1>
+			<div class="mark"></div>
+		</div>
+	</header>
+	<section class="section wrap section1">
+		<h3 class="title blue">网络出现问题，请检查网络后重试哦~</h3>
+		<!--
+		<div style="margin: 1.5rem auto 2rem 43%; text-align: left;">
+		可能原因：</br>
+		* 网络信号差</br>
+		* 服务器出现异常</br>
+		你可以:</br>
+		</div>
+		-->
+		<div class="quick-links">
+			<a href="#" class="btn btn-quick-login btn-blue" id="reload">再次尝试</a>
+		</div>
+	</section>
+	<script src="js/script.js"></script>
+</body>
+<script>
+$(function(){
+	// 再次尝试
+	$('#reload').on('click',function(){
+		jsObject.reload();
+	});
+	
+	// 联系客服
+	$('#kefu').on('click',function(){
+		jsObject.findGm();
+	});
+	
+});
+</script>
+</html>	

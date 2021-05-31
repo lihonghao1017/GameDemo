@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+<body style="font-size:14px;" class="protocolTips">
+<div style="text-align:center;">
+<h3>隐私政策更新提示</h3>
+</div>
+亲爱的用户，感谢您体验本游戏。为了给您提供更优质的游戏体验，我们将会使用您的个人信息，并按法律法规要求，采取严格的安全保护措施，保护您的个人隐私。在此，我们郑重提醒您：
+<br>
+1.<b>请您在使用游戏前，仔细阅读并同意完整版<a href="switchToLicense">《雷霆游戏使用许可及用户协议》</a>和<a href="switchToPrivacy">《雷霆游戏用户隐私政策》</a>，特别是其中的加粗条款。</b>以便了解我们收集、使用、共享、存储信息的情况，以及对信息的保护措施。
+<br>
+<br>
+2.请您自主选择并授权下列全部或部分权限。其中，<b>已默认勾选的权限为实现本游戏核心功能的必要权限，</b>您可手动取消勾选。<b>若您拒绝授权，会导致我们无法您提供本游戏核心功能，您将无法进入本游戏；</b>同时，您可根据使用本游戏中相关功能的具体需要，自主勾选其他非必要权限。若您拒绝授权，将导致您无法使用特定功能，不影响您的其他游戏体验。<b>注意，手机短信、地理位置、通讯录权限包含了个人敏感信息，请谨慎考虑后决定是否授权。</b>
+<br>
+3.本游戏内嵌了第三方SDK，用于提供和优化我们的服务。这些第三方SDK在配合我们向您提供更全面的服务时，可能会收集您的个人信息。具体第三方SDK及信息收集内容请详见《隐私政策》附件一部分。
+<br>
+4.我们尊重您的选择权，您可随时访问、更正、删除您的个人信息并管理您的权限，我们也为您提供注销账户和更正信息渠道。
+</body>
+
+</html>

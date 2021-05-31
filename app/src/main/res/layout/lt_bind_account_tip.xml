@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@id/account_tip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="在本游戏内已创建过角色，无法完成绑定，是否登录查看？" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/account_tip_content">
+        <Button android:textSize="12.0sp" android:textColor="@color/lt_diy_btn_text" android:gravity="center" android:id="@id/btn_negative" android:background="@drawable/lt_btn_bg_white_shape" android:layout_width="110.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:text="绑定新号" android:maxLines="1" />
+        <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btn_positive" android:background="@drawable/lt_login_diy_btn" android:layout_width="110.0dip" android:layout_height="30.0dip" android:text="前往登录" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

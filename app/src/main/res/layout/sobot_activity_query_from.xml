@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sobot_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sobot_layout_titlebar1" />
+    <ScrollView android:id="@id/sobot_sv_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/sobot_ll_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            <TextView android:textSize="@dimen/sobot_listview_remind_text_size" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_tv_doc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip" android:lineSpacingExtra="5.0dip" />
+            <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/sobot_container" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/sobot_line_1dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            <Button android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_white" android:gravity="center" android:id="@id/sobot_btn_submit" android:background="@drawable/sobot_normal_btn_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

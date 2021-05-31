@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/sobot_msg_top_bottom_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <RelativeLayout android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sobot.chat.widget.SobotImageView android:id="@id/sobot_imgHead" android:visibility="gone" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" style="@style/sobot_chatting_imghead" />
+        <TextView android:id="@id/sobot_name" android:visibility="gone" android:layout_toRightOf="@id/sobot_imgHead" style="@style/sobot_chatting_nickname" />
+        <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/sobot_ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/sobot_imgHead" android:layout_below="@id/sobot_name" style="@style/sobot_msg_left_content_ll_bg_no_padding_style">
+            <RelativeLayout android:id="@id/sobot_rl_real_pic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.sobot.chat.widget.image.SobotRCImageView android:id="@id/sobot_iv_picture" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="120.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" app:round_corner_bottom_left="4.0dip" app:round_corner_bottom_right="16.0dip" app:round_corner_top_left="16.0dip" app:round_corner_top_right="16.0dip" />
+                <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/sobot_pic_isgif" android:background="@color/sobot_color" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="15.0dip" android:text="gif" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

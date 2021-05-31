@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@id/leiting_logo" android:background="@drawable/logo" android:layout_width="@dimen/logo_width" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/left" android:background="@drawable/left" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ltclose" android:background="@drawable/close" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/lt_home_choice_text" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/forget_pwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/forget_pwd_bg" android:layout_width="@dimen/icon_size_login_bg_portrait" android:layout_height="@dimen/icon_size_login_bg_portrait" />
+                <ImageView android:background="@drawable/lock_13" android:layout_width="@dimen/icon_size_login_portrait" android:layout_height="@dimen/icon_size_login_portrait" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_login" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_text_login" android:text="@string/lt_home_forget_password_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/regiser" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="@dimen/icon_size_login_bg_portrait" android:layout_height="@dimen/icon_size_login_bg_portrait">
+                <ImageView android:background="@drawable/register_bg" android:layout_width="@dimen/icon_size_login_bg_portrait" android:layout_height="@dimen/icon_size_login_bg_portrait" />
+                <ImageView android:background="@drawable/phone_16_60" android:layout_width="@dimen/icon_size_login_portrait" android:layout_height="@dimen/icon_size_login_portrait" android:layout_centerInParent="true" />
+                <ImageView android:background="@drawable/icon_38" android:layout_width="@dimen/icon_size_login_small_portrait" android:layout_height="@dimen/icon_size_login_small_portrait" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_login" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_text_login" android:text="@string/lt_home_register_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="50.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/visitor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:gravity="center" android:layout_width="@dimen/icon_size_login_bg_portrait" android:layout_height="@dimen/icon_size_login_bg_portrait">
+                <ImageView android:background="@drawable/visitor_bg" android:layout_width="@dimen/icon_size_login_bg_portrait" android:layout_height="@dimen/icon_size_login_bg_portrait" />
+                <ImageView android:background="@drawable/lightning14_58" android:layout_width="@dimen/icon_size_login_portrait" android:layout_height="@dimen/icon_size_login_portrait" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_login" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_text_login" android:text="@string/lt_home_guest_login_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/registered_login" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/register_ed_bg" android:layout_width="@dimen/icon_size_login_bg_portrait" android:layout_height="@dimen/icon_size_login_bg_portrait" />
+                <ImageView android:background="@drawable/person_15_59" android:layout_width="@dimen/icon_size_login_portrait" android:layout_height="@dimen/icon_size_login_portrait" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_login" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_text_login" android:text="@string/lt_home_login_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

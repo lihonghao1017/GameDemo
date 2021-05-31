@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/sobot_msg_top_bottom_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <RelativeLayout android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sobot.chat.widget.SobotImageView android:id="@id/sobot_imgHead" android:visibility="gone" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" style="@style/sobot_chatting_imghead" />
+        <TextView android:id="@id/sobot_name" android:visibility="gone" android:layout_toRightOf="@id/sobot_imgHead" style="@style/sobot_chatting_nickname" />
+        <RelativeLayout android:id="@id/sobot_msg_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/sobot_imgHead" android:layout_below="@id/sobot_name">
+            <LinearLayout android:orientation="vertical" android:id="@id/sobot_ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/sobot_msg_left_content_ll_bg_style">
+                <TextView android:textSize="@dimen/sobot_robot_msg_text_size" android:textColor="@color/sobot_left_msg_text_color" android:id="@id/sobot_msg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sobot_DIMEN_5PX" />
+            </LinearLayout>
+        </RelativeLayout>
+        <HorizontalScrollView android:id="@id/sobot_template1_horizontal_scrollview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/sobot_msg_rl" android:overScrollMode="never">
+            <LinearLayout android:orientation="horizontal" android:id="@id/sobot_template1_horizontal_scrollview_layout" android:background="@color/sobot_lv_message_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>

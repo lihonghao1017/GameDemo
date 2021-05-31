@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sobot_container" android:background="@color/sobot_common_gray6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sobot_rl" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray1" android:ellipsize="end" android:id="@id/sobot_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="40.0dip" android:maxLines="2" android:layout_centerVertical="true" />
+        <TextView android:id="@id/sobot_tv_icon" android:background="@drawable/sobot_icon_right_arrow" android:layout_width="4.0dip" android:layout_height="8.0dip" android:layout_marginRight="21.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

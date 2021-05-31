@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sobot_pop_layout" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_btn_take_photo" android:background="@drawable/sobot_item_setting_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_btn_scan_qr_code" android:background="@drawable/sobot_item_setting_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+        <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_btn_cancel" android:background="@drawable/sobot_item_setting_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>

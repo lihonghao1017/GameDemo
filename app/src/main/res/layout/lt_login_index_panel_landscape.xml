@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="40.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/item_phone_num" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" layout="@layout/lt_layout_edit" />
+    <Button android:textColor="@color/white" android:id="@id/lt_next_step" android:background="@drawable/lt_login_diy_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="短信登录" android:layout_below="@id/item_phone_num" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/choose_entry_way_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/lt_next_step">
+        <View android:background="#ffd4d4d4" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="其他登录方式" />
+        <View android:background="#ffd4d4d4" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/login_index_btn_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/choose_entry_way_ly">
+        <Button android:textSize="12.0sp" android:textColor="@color/lt_diy_btn_text" android:id="@id/account_login" android:background="@drawable/lt_btn_bg_white_shape" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账密登录" android:drawableLeft="@drawable/lt_ic_diy_user" android:drawablePadding="5.0dip" />
+        <Button android:textSize="12.0sp" android:textColor="@color/lt_diy_btn_text" android:id="@id/guest_login" android:background="@drawable/lt_btn_bg_white_shape" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="游客登录" android:drawableLeft="@drawable/lt_ic_diy_customer" android:drawablePadding="5.0dip" android:layout_below="@id/choose_entry_way_ly" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff787878" android:id="@id/login_index_bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="遇到问题" android:layout_below="@id/login_index_btn_ly" android:layout_centerHorizontal="true" />
+</RelativeLayout>

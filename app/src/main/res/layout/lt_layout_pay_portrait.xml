@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leiting.sdk.view.SupportGrayFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_back" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lt_ic_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值中心" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值账号：" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 18850528607" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+            <RelativeLayout android:id="@id/layout_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游戏区组：" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="星火燎原" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:id="@id/view_line" android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值金额：" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.02" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="#ffff9c00" android:id="@id/choose_pay_way_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="选择支付方式" />
+            <ListView android:id="@id/lv_type" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="10.0dip" android:layout_below="@id/choose_pay_way_tv" android:paddingStart="20.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/blue_008CE2" android:id="@id/alipay_welfare_link" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_above="@id/btn_pay" android:layout_centerHorizontal="true" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_pay" android:background="@drawable/lt_bg_btn_red" android:paddingLeft="70.0dip" android:paddingTop="10.0dip" android:paddingRight="70.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="确认充值" android:layout_above="@id/pay_tips" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#fffa8072" android:id="@id/pay_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="请适度娱乐理性消费" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.leiting.sdk.view.SupportGrayFrameLayout>

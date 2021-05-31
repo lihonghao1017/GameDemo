@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sobot_ll_content" android:background="@drawable/sobot_dialog_button_selector" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@drawable/sobot_btn_leavemsg_text_color_selector" android:ellipsize="end" android:id="@id/sobot_tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/sobot_common_gray2" android:ellipsize="end" android:id="@id/sobot_tv_desc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:installLocation="auto" package="com.gbits.atm.leiting" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.leiting.sdk.LeitingApplication" android:theme="@style/AppTheme">
+        <meta-data android:name="android.app.lib_name" android:value="cocos2dlua"/>
+        <meta-data android:name="android.max_aspect" android:value="2.5"/>
+        <meta-data android:name="android.vendor.home_indicator" android:value="hide"/>
+        <meta-data android:name="android.vendor.full_screen" android:value="true"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <activity
+            android:configChanges="orientation|screenSize|uiMode"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:name="org.cocos2dx.lua.AppActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ltatm"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:exported="false" android:name="com.gbits.CrashHandler" android:process=":CrashHandler" android:stateNotNeeded="true"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:name="com.gbits.notification.NotificationService" android:persistent="true" android:process=":NotificationService">
+            <intent-filter>
+                <action android:name="com.gbits.notification.MSG_ACTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="cn.gyyx.check_simulator.library.CheckServer" android:process=".check_simulator"/>
+        <receiver android:name="com.gbits.notification.MyBroadcastReceiver">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter android:priority="10000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.gbits.wxapi.WXEntryActivity"/>
+        <meta-data android:name="PUSH_APPID" android:value="W178iGNLCW8JOfJ68MfWr3"/>
+        <meta-data android:name="PUSH_APPKEY" android:value="7vIh0GwbA79PA2HtQ6vU7"/>
+        <meta-data android:name="PUSH_APPSECRET" android:value="vTWUNZjUUIARMrWy8sljM8"/>
+        <meta-data android:name="MIPUSH_APPID" android:value="XM_2882303761517442428"/>
+        <meta-data android:name="MIPUSH_APPKEY" android:value="XM_5661744260428"/>
+        <meta-data android:name="MEIZUPUSH_APPID" android:value="MZ_113690"/>
+        <meta-data android:name="MEIZUPUSH_APPKEY" android:value="MZ_ab8f7f0cd9ae48dfbec4ba47636cebb7"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="10432181"/>
+
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.gbits.PushActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.sdk.PushActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.igexin.sdk.GActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.igexin.download.DownloadService" android:process=":pushservice"/>
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="downloads.com.gbits.atm.leiting" android:exported="true" android:name="com.igexin.download.DownloadProvider" android:process=":pushservice"/>
+        <service android:exported="true" android:label="PushService" android:name="com.gbits.notification.GetuiPushService" android:process=":pushservice"/>
+        <service android:name="com.gbits.notification.GetuiIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.meizu.cloud.pushsdk.NotificationService" android:process=":pushservice"/>
+        <receiver android:name="com.meizu.cloud.pushsdk.SystemReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.FlymePushReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="com.gbits.atm.leiting"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:process=":pushservice"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:process=":pushservice"/>
+        <receiver android:exported="true" android:name="com.igexin.sdk.MiuiPushReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.gbits.atm.leiting.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:4.0.4.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <provider android:authorities="com.gbits.atm.leiting.aaidinitprovider" android:exported="false" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:4.0.4.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity" android:theme="@style/upsdkDlDialog">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:theme="@style/upsdkDlDialog">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <receiver android:directBootAware="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.gbits.AsktaoMobile.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.gbits.AsktaoMobile.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.gbits.atm.leiting.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:permission="com.gbits.atm.leiting.permission.PUSH_PROVIDER" android:readPermission="com.gbits.atm.leiting.permission.PUSH_PROVIDER" android:writePermission="com.gbits.atm.leiting.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:4.0.4.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <service android:exported="false" android:name="com.igexin.sdk.HmsPushMessageService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.igexin.sdk.OppoPushService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService" android:process=":pushservice"/>
+        <activity android:exported="true" android:name="com.vivo.push.sdk.LinkProxyClientActivity" android:process=":pushservice" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.igexin.sdk.VivoPushMessageReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.gbits.ClipPictureActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="com.gbits.recorder.RecordService"/>
+        <provider android:authorities="com.gbits.atm.leiting.atm.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.gbits.ATMFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.gbits.atm.leiting.hms.update.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.hms.update.provider.UpdateProvider"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <activity android:name="com.alibaba.security.realidentity.activity.RealIdentityWebActivity"/>
+        <activity android:name="com.alibaba.security.realidentity.activity.RealIdentityTakePhotoActivity"/>
+        <activity android:hardwareAccelerated="true" android:name="com.alibaba.security.realidentity.activity.ALBiometricsContractDialog" android:theme="@style/RealIdentityTransparent"/>
+        <activity android:hardwareAccelerated="true" android:name="com.alibaba.security.biometrics.activity.ALBiometricsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.alibaba.security.biometrics.activity.ALBiometricsDialog" android:theme="@style/Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.leiting.sdk.activity.SdkActivity" android:screenOrientation="behind" android:theme="@style/LtTransparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.leiting.sdk.pay.activity.PayActivity" android:screenOrientation="behind" android:theme="@style/LtTransparent"/>
+        <receiver android:exported="false" android:name="com.leiting.sdk.receiver.SobotNotificationClickReceiver">
+            <intent-filter>
+                <action android:name="sobot_notification_click"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.leiting.sdk.receiver.SobotUnReadMsgReceiver">
+            <intent-filter>
+                <action android:name="sobot_unreadCountBrocast"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_name" android:name="com.unionpay.uppay.PayActivity" android:screenOrientation="portrait" android:theme="@style/AppBaseLeiting" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.unionpay.UPPayWapActivity" android:screenOrientation="portrait" android:theme="@style/AppBaseLeiting" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.leiting.sdk.pay.wechatpay.WechatH5Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.leiting.sdk.micro.MicroWebActivity" android:screenOrientation="behind" android:theme="@style/LtNotTransparent"/>
+        <meta-data android:name="cn.thinkingdata.android.MainProcessName" android:value="com.leiting.sdk.test2"/>
+        <service android:exported="false" android:name="cn.thinkingdata.android.TDQuitSafelyService$TDKeepAliveService" android:stopWithTask="false"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="com.sobot.chat.conversation.SobotChatActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.sobot.chat.activity.SobotPhotoActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.WebViewActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotSkillGroupActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostMsgActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotConsultationListActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.sobot.chat.activity.SobotPhotoListActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotCusFieldActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostCategoryActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotQueryFromActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotChooseCityActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotChooseFileActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotFileDetailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotCameraActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotVideoActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotTicketDetailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotHelpCenterActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotProblemCategoryActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotProblemDetailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostLeaveMsgActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotRobotListActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotReplyActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotTicketEvaluateActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotEvaluateActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotPostMsgTmpListActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppThemeDialogIsTranslucent"/>
+        <service android:exported="false" android:label="SobotChatTCPServer" android:name="com.sobot.chat.core.channel.SobotTCPServer"/>
+        <service android:name="com.sobot.chat.server.SobotSessionServer"/>
+        <provider android:authorities="com.gbits.atm.leiting.sobot_fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sobot.chat.provider.SobotFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sobot_provider_paths"/>
+        </provider>
+        <meta-data android:name="WX_APP_ID" android:value="wxd7866b0e0fb11bbc"/>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.gbits.atm.leiting"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="getui.permission.GetuiService.com.gbits.atm.leiting" android:protectionLevel="normal"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <permission android:name="com.gbits.atm.leiting.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="com.gbits.atm.leiting.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.gbits.atm.leiting.push.permission.MESSAGE"/>
+    <uses-permission android:name="com.gbits.atm.leiting.permission.C2D_MESSAGE"/>
+    <permission android:name="com.gbits.atm.leiting.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.gbits.atm.leiting.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <permission android:name="com.gbits.atm.leiting.permission.PROCESS_PUSH_MSG" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.gbits.atm.leiting.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <permission android:name="com.gbits.atm.leiting.permission.PROCESS_PUSH_MSG" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.gbits.atm.leiting.permission.PUSH_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.gbits.atm.leiting.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+
+    <uses-permission android:name="com.gbits.atm.leiting.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc.hce"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+</manifest>

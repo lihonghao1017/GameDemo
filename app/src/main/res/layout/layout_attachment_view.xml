@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sobot_layout_attachment_frame" android:layout_width="fill_parent" android:layout_height="85.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sobot.chat.widget.image.SobotRCRelativeLayout
+        android:id="@id/sobot_attachment_root_view"
+        android:background="@color/sobot_common_gray7"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:clip_background="true"
+        app:round_corner="4.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_text_gray" android:ellipsize="end" android:id="@id/sobot_file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip" android:lines="2" />
+        <ImageView android:id="@id/sobot_file_type_icon" android:layout_width="17.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/sobot_icon_file_rar" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_gray3" android:id="@id/sobot_file_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:layout_alignBottom="@id/sobot_file_type_icon" android:layout_alignParentRight="true" />
+        <ImageView android:layout_width="5.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/sobot_attachment_right_arrow" android:scaleType="fitCenter" android:layout_alignTop="@id/sobot_file_download" android:layout_alignBottom="@id/sobot_file_download" android:layout_alignParentRight="true" />
+    </com.sobot.chat.widget.image.SobotRCRelativeLayout>
+    <com.sobot.chat.widget.image.SobotRCImageView android:id="@id/sobot_file_image_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sobot_bg_default_pic_img" android:scaleType="fitCenter" app:round_corner="4.0dip" />
+</FrameLayout>

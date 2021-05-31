@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingTop="20.0dip" android:paddingRight="5.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/lt_common_text_black" android:layout_gravity="center_horizontal" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前账号：xxxxxxxxxxx" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff6a6a6a" android:layout_gravity="center_horizontal" android:id="@id/tv_destroy_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="距离账号注销剩余xx" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/tv_username">
+        <include android:id="@id/item_alter_pwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/lt_item_img_txt_portrait" />
+        <include android:id="@id/item_switch_account" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/lt_item_img_txt_portrait" />
+        <include android:id="@id/item_bind_phone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/lt_item_img_txt_portrait" />
+        <include android:id="@id/item_bind_id_card" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/lt_item_img_txt_portrait" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#fffcab2c" android:id="@id/account_center_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="雷霆用户隐私政策" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff787878" android:id="@id/account_center_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="申请删除账号" />
+    </LinearLayout>
+</LinearLayout>

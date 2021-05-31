@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/sobot_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sobot.chat.widget.SobotMHLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sobot_mhv_HeightRatio="0.7">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_gray1" android:gravity="center" android:id="@id/sobot_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/sobot_btn_cancle" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:layout_gravity="center_vertical" android:background="@drawable/sobot_icon_evaluation_cancel" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="25.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="@dimen/line_height_0_4_dp" />
+        <LinearLayout android:id="@id/sobot_ll_search" android:background="@color/sobot_common_gray6" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <EditText android:textSize="15.0sp" android:textColor="@color/sobot_common_gray1" android:textColorHint="@color/sobot_common_gray" android:gravity="center_vertical" android:id="@id/sobot_et_search" android:background="@drawable/sobot_search_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableLeft="@drawable/sobot_search" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+        <ListView android:scrollbarSize="10.0dip" android:scrollbarThumbVertical="@drawable/custom_scroll_style" android:id="@id/sobot_activity_cusfield_listview" android:background="@color/sobot_common_gray6" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/sobot_line_1dp" android:dividerHeight="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+        <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="@dimen/line_height_0_4_dp" />
+    </com.sobot.chat.widget.SobotMHLinearLayout>
+    <LinearLayout android:id="@id/sobot_ll_submit" android:background="@color/sobot_common_gray6" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <Button android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_white" android:gravity="center" android:id="@id/sobot_btn_submit" android:background="@drawable/sobot_normal_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

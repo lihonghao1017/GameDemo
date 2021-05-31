@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sobot_real_ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/sobot_msg_top_bottom_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/sobot_my_msg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/sobot_frame_layout" android:layout_width="120.0dip" style="@style/sobot_msg_left_empty_bg_style">
+            <ImageView android:id="@id/sobot_msgStatus" android:visibility="gone" style="@style/sobot_msg_send_status_style" />
+            <ProgressBar android:id="@id/sobot_msgProgressBar" android:visibility="gone" android:indeterminateDrawable="@drawable/sobot_progressbar_circle_loading" style="@style/sobot_msg_send_loading_style" />
+        </FrameLayout>
+        <LinearLayout android:id="@id/sobot_ll_hollow_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/sobot_frame_layout" android:layout_below="@id/sobot_name" style="@style/sobot_msg_file_right_content_ll_bg_style">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/sobot_ll_file_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.sobot.chat.widget.SobotSectorProgressView android:id="@id/sobot_progress" android:layout_width="34.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray1" android:ellipsize="end" android:id="@id/sobot_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="2" android:layout_toRightOf="@id/sobot_progress" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/sobot_common_gray2" android:ellipsize="end" android:id="@id/sobot_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/sobot_progress" android:layout_below="@id/sobot_file_name" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/sobot_name" android:visibility="gone" android:layout_toLeftOf="@id/sobot_imgHead" style="@style/sobot_chatting_nickname" />
+    <com.sobot.chat.widget.SobotImageView android:id="@id/sobot_imgHead" android:visibility="gone" android:layout_alignParentRight="true" style="@style/sobot_chatting_imghead" />
+</LinearLayout>

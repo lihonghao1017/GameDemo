@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/lt_common_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lt_iv_dialog_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/lt_ic_close_black" />
+    <ImageView android:id="@id/yijian_logo_title" android:background="@drawable/lt_logo_title" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="50.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/jiyan_phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="178****6659" android:layout_below="@id/yijian_logo_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/jiyan_slogan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="认证服务由运营商提供" android:layout_below="@id/jiyan_phone_num" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/jiyan_btn_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/jiyan_slogan" android:layout_centerHorizontal="true">
+        <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_one_click_login" android:background="@drawable/lt_login_diy_btn" android:layout_width="160.0dip" android:layout_height="40.0dip" android:text="本机号码一键登录" android:maxLines="1" android:layout_below="@id/jiyan_slogan" />
+        <Button android:textSize="13.0sp" android:textColor="@color/lt_diy_btn_text" android:id="@id/btn_other_way_login" android:background="@drawable/lt_btn_bg_white_shape" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="其他方式登录" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/jiyan_btn_ly" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/agreement_btn" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/lt_ic_check_normal" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/black" android:id="@id/agreement_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录即代表你已阅读" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff6d3ff3" android:id="@id/protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户协议" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="、" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff6d3ff3" android:id="@id/privacy_policy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私政策" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="和" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff6d3ff3" android:id="@id/carrier_privacy_policy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运营商服务与隐私协议" />
+    </LinearLayout>
+</RelativeLayout>

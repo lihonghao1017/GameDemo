@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/sobot_bg_auto_complete_item" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray1" android:ellipsize="end" android:gravity="center" android:id="@id/sobot_child_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" android:singleLine="true" />
+    <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/lt_common_text_black" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前账号：xxxxxxxxxxx" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffff4c4c" android:id="@id/visitor_center_red_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="此账号属临时使用账号，为确保您能体验到所有游戏内容，请使用以下方式完善账号。" android:layout_below="@id/tv_username" android:layout_centerHorizontal="true" />
+    <include android:id="@id/btn_register_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/visitor_center_red_tip" android:layout_centerHorizontal="true" layout="@layout/lt_btn_img_txt" />
+    <include android:id="@id/btn_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/btn_register_bind" android:layout_centerHorizontal="true" layout="@layout/lt_btn_img_txt" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffa6a6a6" android:id="@id/visitor_center_gray_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="完善账号，即可获得更多设备登录，支付功能" android:layout_below="@id/btn_bind" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/visitor_center_gray_tip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/lt_link_text" android:gravity="center" android:id="@id/item_switch_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换账号" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/lt_link_text" android:gravity="center" android:id="@id/tv_gm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系客服" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/sobot_msg_top_bottom_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sobot.chat.widget.SobotImageView android:id="@id/sobot_imgHead" android:visibility="gone" android:layout_marginLeft="10.0dip" style="@style/sobot_chatting_imghead" />
+        <TextView android:id="@id/sobot_name" android:visibility="gone" android:layout_toRightOf="@id/sobot_imgHead" style="@style/sobot_chatting_nickname" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sobot_ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/sobot_imgHead" android:layout_below="@id/sobot_name" style="@style/sobot_msg_left_content_ll_bg_style">
+            <TextView android:textSize="@dimen/sobot_robot_msg_text_size" android:textColor="@color/sobot_left_msg_text_color" android:id="@id/sobot_keyword_tips_msg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/sobot_DIMEN_5PX" />
+            <LinearLayout android:orientation="vertical" android:id="@id/sobot_keyword_grouplist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

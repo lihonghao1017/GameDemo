@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sobot_real_ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/sobot_msg_top_bottom_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/sobot_name" android:visibility="gone" android:layout_toLeftOf="@id/sobot_imgHead" style="@style/sobot_chatting_nickname" />
+        <com.sobot.chat.widget.SobotImageView android:id="@id/sobot_imgHead" android:visibility="gone" android:layout_alignParentRight="true" style="@style/sobot_chatting_imghead" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/sobot_frame_layout" android:visibility="visible" android:layout_width="@dimen/sobot_DIMEN_48PX" android:layout_height="@dimen/sobot_DIMEN_48PX" android:layout_marginRight="5.0dip">
+            <ImageView android:gravity="center" android:id="@id/sobot_msgStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sobot_failed_normal" android:contentDescription="@null" />
+            <ProgressBar android:layout_gravity="right" android:id="@id/sobot_msgProgressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateDrawable="@drawable/sobot_progressbar_circle_loading" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/sobot_rl_hollow_container" android:layout_width="126.0dip" android:layout_height="200.0dip" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/sobot_imgHead" android:layout_below="@id/sobot_name" style="@style/sobot_msg_right_content_ll_bg_no_padding_style">
+            <com.sobot.chat.widget.image.SobotRCImageView android:id="@id/st_iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" app:round_corner_bottom_left="16.0dip" app:round_corner_bottom_right="4.0dip" app:round_corner_top_left="16.0dip" app:round_corner_top_right="16.0dip" />
+            <ImageView android:id="@id/st_tv_play" android:background="@drawable/sobot_ic_play" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_centerInParent="true" />
+            <com.sobot.chat.widget.RoundProgressBar android:id="@id/sobot_pic_progress_round" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

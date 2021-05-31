@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_bottom_tip_img" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/lt_ic_tips" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffa6a6a6" android:id="@id/dialog_bottom_tip_grey_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="如您未曾拥有雷星通行证账号，请立即" />
+    <TextView android:textSize="12.0sp" android:textColor="#fffcab2c" android:id="@id/dialog_bottom_tip_yellow_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即注册" />
+</LinearLayout>

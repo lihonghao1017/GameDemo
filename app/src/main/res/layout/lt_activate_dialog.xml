@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/lt_common_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/common_close" android:layout_marginTop="15.0dip" style="@style/CommonCloseBtn" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/activate_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_close">
+        <ImageView android:background="@drawable/lt_ic_ltlogo" android:layout_width="11.0dip" android:layout_height="17.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/activate_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="激活码激活" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/activate_edit_ly" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="38.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="38.0dip" android:layout_below="@id/activate_title">
+        <ImageView android:id="@id/activate_edit_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/lt_ic_code_black" android:layout_centerVertical="true" />
+        <EditText android:textSize="14.0sp" android:textColor="#ff000000" android:textColorHint="#ff6a6a6a" android:ellipsize="end" android:id="@id/activate_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:hint="请输入激活码" android:maxLines="1" android:singleLine="true" android:maxLength="20" android:layout_toRightOf="@id/activate_edit_img" android:layout_centerVertical="true" android:windowSoftInputMode="adjustPan" android:imeOptions="flagNoExtractUi|flagNoFullscreen" />
+    </RelativeLayout>
+    <View android:layout_below="@id/activate_edit_ly" style="@style/CommonDivideView" />
+    <Button android:id="@id/common_submit" android:layout_marginTop="20.0dip" android:layout_marginBottom="25.0dip" android:text="确认激活" android:layout_below="@id/activate_edit_ly" android:layout_centerHorizontal="true" style="@style/lt_commonSubmitBtn" />
+</RelativeLayout>

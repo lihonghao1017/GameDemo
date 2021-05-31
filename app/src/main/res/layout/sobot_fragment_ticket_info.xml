@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/sobot_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/sobot_line_1dp" android:layout_width="wrap_content" android:layout_height="0.39999998dip" />
+    <ListView android:scrollbarThumbVertical="@drawable/custom_scroll_style" android:id="@id/sobot_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:listSelector="@android:color/transparent" android:divider="#00000000" android:dividerHeight="10.0dip" />
+    <TextView android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

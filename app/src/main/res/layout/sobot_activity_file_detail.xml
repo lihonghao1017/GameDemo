@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sobot_layout_titlebar1" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/sobot_file_icon" android:background="@drawable/sobot_icon_file_unknow" android:layout_width="55.0dip" android:layout_height="64.0dip" android:layout_marginTop="41.0dip" android:layout_marginBottom="30.0dip" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_black" android:layout_gravity="center_horizontal" android:id="@id/sobot_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sobot_ll_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray" android:id="@id/sobot_tv_file_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray" android:layout_gravity="center_horizontal" android:id="@id/sobot_tv_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="17.0sp" android:textColor="@drawable/sobot_btn_text_selector" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sobot_btn_start" android:background="@drawable/sobot_btn_normal_selector" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="90.0dip" android:layout_marginRight="40.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sobot_ll_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+        <ProgressBar android:id="@id/sobot_pb_progress" android:layout_width="fill_parent" android:layout_height="4.0dip" android:progressDrawable="@drawable/sobot_progressbar_preview" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+        <TextView android:id="@id/sobot_btn_cancel" android:background="@drawable/sobot_icon_remove" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray2" android:layout_gravity="center_horizontal" android:id="@id/sobot_tv_decribe" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" />
+</LinearLayout>

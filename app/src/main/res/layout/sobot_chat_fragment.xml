@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sobot.chat.widget.kpswitch.widget.KPSwitchRootLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sobot_layout_titlebar" />
+    <RelativeLayout android:id="@id/sobot_net_status_remide" android:background="@color/sobot_common_yellow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sobot_DIMEN_108PX">
+        <TextView android:textSize="@dimen/sobot_robot_msg_text_size" android:textColor="@color/sobot_common_tuhuanse" android:id="@id/sobot_net_not_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/sobot_icon_tag_nonet" android:layout_toLeftOf="@id/sobot_net_not_connect" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <include layout="@layout/sobot_chat_main" />
+</com.sobot.chat.widget.kpswitch.widget.KPSwitchRootLinearLayout>

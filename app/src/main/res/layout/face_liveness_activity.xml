@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/abfl_detect_layout" android:background="@color/ab_face_color_c_white" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.security.biometrics.logic.view.widget.CameraWidget android:id="@id/abfl_widget_camera" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.alibaba.security.biometrics.logic.view.custom.CameraSurfaceView android:layout_gravity="center_horizontal" android:id="@id/abfl_widget_camera_surface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </com.alibaba.security.biometrics.logic.view.widget.CameraWidget>
+    <include android:id="@id/abfl_widget_predetectaction" layout="@layout/face_widget_predetectaction" />
+    <include android:id="@id/abfl_widget_detectaction" layout="@layout/face_widget_detectaction" />
+    <include android:id="@id/abfl_widget_detectactionresult" layout="@layout/face_widget_detectactionresult" />
+    <include android:id="@id/abfl_widget_guide" layout="@layout/face_widget_guide" />
+    <include android:id="@id/abfl_widget_titlebar" layout="@layout/face_widget_titlebar" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sobot_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="gone" layout="@layout/sobot_layout_titlebar1" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sobot_ll_container" android:background="@color/sobot_white" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/sobot_pst_back_iv" android:padding="12.0dip" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/sobot_icon_back_grey" />
+        <com.sobot.chat.widget.PagerSlidingTab android:id="@id/sobot_pst_indicator" android:background="@color/sobot_color_title_bar_bg" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_weight="1.0" app:curTabTextColor="@color/sobot_postMsg_nav_sel_tx_color" app:indicatorColor="@color/sobot_postMsg_nav_indicator_color" app:tabTextColor="@color/sobot_postMsg_nav_tx_color" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/sobot_viewPager" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sobot_ll_completed" android:background="@color/sobot_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/sobot_icon_completed" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="50.0dip" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_tv_leaveMsg_create_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray2" android:gravity="center" android:id="@id/sobot_tv_leaveMsg_create_success_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip" />
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_white" android:gravity="center" android:id="@id/sobot_tv_completed" android:background="@drawable/sobot_normal_btn_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="30.0dip" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/sobot_color" android:id="@id/sobot_tv_ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

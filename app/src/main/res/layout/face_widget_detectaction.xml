@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.security.biometrics.logic.view.widget.DetectActionWidget android:id="@id/widget_abfl_detectaction" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/abfl_widget_da_actionGuidance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.2" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageView android:id="@id/abfl_widget_da_actionGuidance_image" android:layout_width="200.0px" android:layout_height="200.0px" android:layout_marginBottom="10.0dip" android:scaleType="fitCenter" />
+                <TextView android:textSize="12.0sp" android:textColor="#fffffdfd" android:id="@id/abfl_widget_da_actionGuidance_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请按图示做动作" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/abfl_widget_da_imageImmediateGuidance" android:visibility="gone" android:layout_width="200.0px" android:layout_height="200.0px" android:src="@drawable/face_detect_human_type" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:alpha="0.9" />
+        <RelativeLayout android:id="@id/abfl_widget_da_textImmediateGuidance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="136.0px" android:layout_centerHorizontal="true">
+            <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.4" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/abfl_widget_da_textImmediateGuidance_text" android:layout_width="wrap_content" android:layout_height="136.0px" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.alibaba.security.biometrics.logic.view.custom.MaskView android:id="@id/abfl_widget_da_maskview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/abfl_widget_da_maskview_blurview" android:background="@color/ab_face_color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:alpha="0.7" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/abfl_widget_da_mainPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/abfl_widget_da_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/abfl_widget_da_waiting" android:background="#ff2f2f2f" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/abfl_widget_da_waiting_image" android:visibility="visible" android:layout_width="178.0px" android:layout_height="178.0px" android:layout_marginTop="412.0px" android:src="@drawable/face_waiting" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/abfl_widget_da_waiting_scan" android:visibility="visible" android:layout_width="150.0px" android:layout_height="150.0px" android:layout_marginTop="426.0px" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <View android:id="@id/abfl_widget_da_waiting_scan_mask" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="145.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/abfl_widget_da_waiting_scan_line" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="5.0px" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <TextView android:textSize="40.0px" android:textColor="#ffcfcfcf" android:gravity="center_horizontal" android:id="@id/abfl_widget_da_waiting_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="55.0px" android:layout_marginTop="40.0px" android:text="正在处理..." android:layout_below="@id/abfl_widget_da_waiting_image" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </com.alibaba.security.biometrics.logic.view.widget.DetectActionWidget>
+</merge>

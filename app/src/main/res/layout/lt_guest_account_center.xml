@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/guest_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="您的账号：afnkfjehf" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@id/guest_account_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/lt_fast_login_toast_msg1" android:layout_below="@id/guest_account" />
+    <Button android:id="@id/lt_common_submit" android:text="注册并认证" android:layout_below="@id/guest_account_content" android:layout_centerHorizontal="true" style="@style/lt_commonSubmitBtn" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/lt_common_submit" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ff787878" android:id="@id/account_center_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="雷霆用户隐私政策" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff787878" android:id="@id/account_center_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="切换账号" />
+    </LinearLayout>
+</RelativeLayout>

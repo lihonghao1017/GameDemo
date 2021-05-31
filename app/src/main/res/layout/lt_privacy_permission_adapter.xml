@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_layout" android:background="@drawable/lt_privacy_permission_choose" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/lt_ic_permission_storage" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tv_per_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存储空间" android:layout_toRightOf="@id/iv_per" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_per_flag" android:background="@drawable/lt_btn_bg_red_shape" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="必须" android:layout_toRightOf="@id/tv_per_name" android:layout_alignTop="@id/tv_per_name" android:layout_alignBottom="@id/tv_per_name" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff787878" android:id="@id/tv_per_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用于读写sd卡文件" android:layout_toRightOf="@id/iv_per" android:layout_below="@id/tv_per_name" />
+    </RelativeLayout>
+</RelativeLayout>

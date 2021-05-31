@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sobot_layout_titlebar1" />
+    <include layout="@layout/sobot_layout_top_divider" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_text_problem_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" />
+    <com.sobot.chat.widget.SobotWebview android:id="@id/sobot_webView" android:paddingLeft="40.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/sobot_layout_online_service_btn" />
+</LinearLayout>

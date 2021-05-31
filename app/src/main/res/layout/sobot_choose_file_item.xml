@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="54.0dip" android:foreground="?android:selectableItemBackground">
+        <TextView android:id="@id/sobot_tv_radioBtn" android:background="@drawable/sobot_radio_btn_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/sobot_tv_icon" android:background="@drawable/sobot_icon_file" android:layout_width="32.0dip" android:layout_height="34.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/sobot_tv_radioBtn" style="?android:textViewStyle" />
+        <TextView android:textSize="@dimen/sobot_text_font_small" android:textColor="@color/sobot_common_gray1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sobot_tv_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/sobot_tv_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_gray2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sobot_tv_descripe" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/sobot_tv_icon" android:layout_below="@id/sobot_tv_name" />
+    </RelativeLayout>
+    <LinearLayout android:background="@color/sobot_white" android:layout_width="fill_parent" android:layout_height="1.0dip">
+        <View android:id="@id/work_order_category_line" android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="@dimen/line_height_0_4_dp" android:layout_marginLeft="92.0dip" />
+    </LinearLayout>
+</LinearLayout>

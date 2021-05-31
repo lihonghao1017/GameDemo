@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="sobot_emotiocon_line">4</integer>
+    <integer name="sobot_emotiocon_row">7</integer>
+    <integer name="sobot_plus_menu_line">2</integer>
+    <integer name="sobot_plus_menu_row">4</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

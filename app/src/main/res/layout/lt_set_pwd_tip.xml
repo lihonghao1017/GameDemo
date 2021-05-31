@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/set_pwd_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="您的账户安全性较低，建议您现在设置安全密码，以提高账户安全。" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" android:layout_below="@id/set_pwd_tip_text">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="14.0sp" android:textColor="@color/lt_diy_btn_text" android:id="@id/btn_negative" android:background="@drawable/lt_btn_bg_white_shape" android:layout_width="120.0dip" android:layout_height="40.0dip" android:text="下次再说" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/btn_positive" android:background="@drawable/lt_login_diy_btn" android:layout_width="120.0dip" android:layout_height="40.0dip" android:text="立即设置" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

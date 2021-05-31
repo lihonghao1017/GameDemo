@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sobot_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sobot_layout_titlebar1" />
+    <ScrollView android:id="@id/sobot_sv_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/sobot_post_msg_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+                <TextView android:textSize="@dimen/sobot_listview_remind_text_size" android:textColor="@color/sobot_common_gray" android:id="@id/sobot_tv_post_msg" android:background="@color/sobot_listview_remind" android:paddingLeft="20.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/sobot_white" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_gray2" android:id="@id/sobot_tv_problem_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#fff9676f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" *" />
+                </LinearLayout>
+                <EditText android:textSize="14.0sp" android:textColor="@color/sobot_common_black" android:textColorHint="@color/sobot_common_gray" android:gravity="top" android:id="@id/sobot_post_et_content" android:background="@drawable/sobot_edittext_noborder_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="150.0dip" android:maxLength="3000" android:lineSpacingExtra="5.0dip" android:inputType="textMultiLine" />
+            </LinearLayout>
+            <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="@dimen/line_height_0_4_dp" />
+            <Button android:textSize="17.0sp" android:textColor="@color/sobot_common_white" android:gravity="center" android:id="@id/sobot_btn_submit" android:background="@drawable/sobot_normal_btn_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

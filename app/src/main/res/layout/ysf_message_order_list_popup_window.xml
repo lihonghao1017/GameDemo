@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ysf_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="@dimen/ysf_text_size_14" android:textColor="@color/ysf_grey_666666" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="请选择你想咨询的订单" android:maxLines="1" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ysf_iv_order_list_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ysf_ic_bot_close" android:scaleType="centerInside" android:contentDescription="@null" />
+    </LinearLayout>
+    <include layout="@layout/ysf_include_divider" />
+    <com.qiyukf.unicorn.widget.pulltorefresh.PullToRefreshLayout android:id="@id/ysf_ptr_layout_order_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.qiyukf.unicorn.widget.pulltorefresh.PullableListView android:id="@id/ysf_lv_order_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" />
+    </com.qiyukf.unicorn.widget.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/sobot_msg_top_bottom_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time" />
+    <LinearLayout android:background="@drawable/sobot_consult_bg_normal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip">
+        <RelativeLayout android:id="@id/sobot_container" android:background="@color/sobot_common_msg_bg_white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/sobot_goods_title_text_color" android:ellipsize="end" android:id="@id/sobot_goods_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <com.sobot.chat.widget.image.SobotRCImageView android:id="@id/sobot_goods_pic" android:visibility="visible" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/sobot_icon_consulting_default_pic" android:scaleType="centerCrop" android:layout_below="@id/sobot_goods_title" app:round_corner="6.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/sobot_goods_des_text_color" android:id="@id/sobot_goods_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:layout_toRightOf="@id/sobot_goods_pic" android:layout_below="@id/sobot_goods_title" android:layout_alignTop="@id/sobot_goods_pic" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_green" android:id="@id/sobot_goods_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_toRightOf="@id/sobot_goods_pic" android:layout_below="@id/sobot_goods_des" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignBaseline="@id/sobot_goods_label" android:layout_alignParentRight="true">
+                <Button android:textSize="14.0sp" android:textColor="@color/sobot_common_white" android:id="@id/sobot_goods_sendBtn" android:background="@drawable/sobot_evaluate_commit_selector" android:paddingLeft="15.0dip" android:paddingTop="1.0dip" android:paddingRight="15.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

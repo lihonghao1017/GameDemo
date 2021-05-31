@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/sobot_rl_gif" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sobot.chat.widget.gif.GifView2 android:id="@id/sobot_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.sobot.chat.widget.photoview.PhotoView android:id="@id/sobot_big_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@null" />
+</RelativeLayout>

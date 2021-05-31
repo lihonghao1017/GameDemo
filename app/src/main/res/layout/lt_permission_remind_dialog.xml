@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/lt_common_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff484848" android:id="@id/remind_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="20.0dip" android:text="@string/lt_request_permission_remind_msg" />
+    <GridView android:gravity="center" android:id="@id/grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:layout_marginBottom="44.0dip" android:listSelector="@android:color/transparent" android:numColumns="2" />
+    <Button android:id="@id/btn_next" android:layout_marginBottom="20.0dip" android:text="@string/lt_confirm_text" android:layout_below="@id/grid_view" android:layout_centerHorizontal="true" style="@style/lt_commonSubmitBtn" />
+</LinearLayout>

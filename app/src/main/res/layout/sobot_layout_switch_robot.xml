@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/sobot_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_gray1" android:gravity="center" android:id="@id/sobot_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/sobot_negativeButton" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:layout_gravity="center_vertical" android:background="@drawable/sobot_icon_evaluation_cancel" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="25.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+    <GridView android:scrollbarThumbVertical="@drawable/custom_scroll_style" android:id="@id/sobot_gv" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="40.0dip" android:scrollbars="none" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="20.0dip" style="@style/sobot_grid_view" />
+</LinearLayout>

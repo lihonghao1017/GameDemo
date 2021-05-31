@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sobot.chat.widget.image.SobotRCImageView android:id="@id/sobot_iv_pic" android:layout_width="76.0dip" android:layout_height="60.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@null" app:round_corner="4.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/sobot_iv_pic_add_ll" android:background="@drawable/sobot_hollow_bg" android:visibility="visible" android:layout_width="76.0dip" android:layout_height="60.0dip">
+        <ImageView android:id="@id/sobot_iv_pic_add" android:layout_width="24.0dip" android:layout_height="19.0dip" android:src="@drawable/sobot_pic_list_add" android:scaleType="centerCrop" android:contentDescription="@null" />
+    </LinearLayout>
+    <ImageView android:id="@id/sobot_iv_pic_delete" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_margin="4.0dip" android:src="@drawable/sobot_icon_remove" android:layout_alignTop="@id/sobot_iv_pic" android:layout_alignRight="@id/sobot_iv_pic" />
+</RelativeLayout>

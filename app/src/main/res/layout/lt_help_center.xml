@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/call_helper" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true">
+            <ImageView android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/lt_help_center_helper" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/lt_common_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="联系客服" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_agreement" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true">
+            <ImageView android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/lt_user_agreement" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/lt_common_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="用户协议" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/privacy_policy" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/lt_privacy_plicy" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/lt_common_text_black" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="隐私协议" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

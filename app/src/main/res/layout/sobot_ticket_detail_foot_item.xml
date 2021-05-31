@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/sobot_common_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sobot_my_evaluate_ll" android:background="@color/sobot_common_gray6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_my_evaluate_tv" android:background="@color/sobot_common_gray6" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sobot_ll_score" android:background="@color/sobot_common_gray6" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_tv_my_evaluate_score" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RatingBar android:layout_gravity="center_vertical" android:id="@id/sobot_ratingBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="12.0dip" android:numStars="5" android:rating="5.0" android:stepSize="0.5" style="@style/sobot_small_roomRatingBar" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/sobot_ll_remark" android:background="@color/sobot_common_gray6" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_tv_my_evaluate_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_gray1" android:id="@id/sobot_tv_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/sobot_line_1dp" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginTop="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

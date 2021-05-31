@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/lt_common_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lt_iv_dialog_back" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/lt_ic_back_black" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff787878" android:layout_gravity="end" android:id="@id/lt_tv_top_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="遇到问题" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lt_common_title_ly" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lt_iv_dialog_back">
+        <ImageView android:background="@drawable/lt_ic_ltlogo" android:layout_width="11.0dip" android:layout_height="17.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/lt_common_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="短信验证" />
+    </LinearLayout>
+    <TextView android:textSize="13.0dip" android:textColor="@color/black" android:id="@id/verify_sms_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="请使用手机号码短信发送验证码" android:layout_below="@id/lt_common_title_ly" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/verify_sms_content_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/verify_sms_text" android:layout_centerHorizontal="true">
+        <TextView android:textSize="13.0sp" android:textColor="#ff6d3ff3" android:id="@id/verify_sms_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KTUS" />
+        <ImageView android:id="@id/verify_sms_copy" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/lt_ic_copy" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="至" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff6d3ff3" android:id="@id/verify_sms_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="\ 1002354332" />
+        <ImageView android:id="@id/verify_sms_send" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/lt_ic_send" />
+    </LinearLayout>
+    <TextView android:textSize="13.0dip" android:textColor="@color/black" android:id="@id/verify_sms_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="完成验证登录" android:layout_below="@id/verify_sms_content_ly" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/verify_sms_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="说明：今日免费短信验证码已用尽，发送短信运营商可能收取费用，雷霆游戏不额外收取。" android:layout_below="@id/verify_sms_text2" />
+    <include android:id="@id/item_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/verify_sms_tip" layout="@layout/lt_agreement_bottom_view" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/item_agreement">
+        <Button android:textSize="12.0sp" android:textColor="@color/lt_diy_btn_text" android:gravity="center" android:id="@id/btn_negative" android:background="@drawable/lt_btn_bg_white_shape" android:layout_width="110.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:text="重新获取（40s）" android:maxLines="1" />
+        <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btn_positive" android:background="@drawable/lt_login_diy_btn" android:layout_width="110.0dip" android:layout_height="30.0dip" android:text="我已发送" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

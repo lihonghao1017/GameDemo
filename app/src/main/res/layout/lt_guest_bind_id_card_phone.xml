@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/item_phone_num" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="35.0dip" layout="@layout/lt_layout_edit" />
+        <include android:id="@id/item_code" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" layout="@layout/lt_layout_code_edit" />
+        <include android:id="@id/item_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/item_code" layout="@layout/lt_agreement_bottom_view" />
+    </LinearLayout>
+</RelativeLayout>

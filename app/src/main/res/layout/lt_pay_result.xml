@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.leiting.sdk.view.SupportGrayFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/lt_common_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/iv_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="15.0dip" android:src="@drawable/lt_ic_close_black" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/pay_result_img" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/lt_emoji_fail" android:layout_below="@id/iv_close" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/pay_result_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" android:text="充值成功" android:layout_below="@id/pay_result_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.leiting.sdk.view.SupportGrayFrameLayout>

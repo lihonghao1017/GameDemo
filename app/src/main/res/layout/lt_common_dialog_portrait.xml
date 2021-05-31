@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/lt_iv_dialog_logo" android:background="@drawable/lt_img_ltlogo" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lt_view_dialog_content" android:background="@drawable/lt_bg_white_bottom_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/lt_iv_dialog_back" android:background="@drawable/lt_ic_back_white" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="15.0dip" />
+    <ImageView android:layout_gravity="end" android:id="@id/lt_iv_dialog_help" android:background="@drawable/lt_ic_help_white" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="15.0dip" />
+</FrameLayout>

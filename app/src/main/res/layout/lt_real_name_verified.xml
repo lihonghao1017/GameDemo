@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#fff5352c" android:gravity="center" android:id="@id/real_name_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="您的账号实名信息有误，无法登录游戏。" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff787878" android:id="@id/real_name_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip" android:text="根据国家新闻出版署发布的《关于防止未成年人沉迷网络游戏的通知》要求实名认证。" android:layout_below="@id/real_name_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

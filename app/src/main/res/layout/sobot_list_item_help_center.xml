@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sobot_container" android:background="@color/sobot_line_1dp" android:padding="0.39999998dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sobot_rl" android:background="@color/sobot_common_gray7" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sobot.chat.widget.SobotImageView android:id="@id/sobot_tv_icon" android:background="@drawable/sobot_bg_default_pic_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/sobot_common_black" android:ellipsize="end" android:id="@id/sobot_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:maxLength="10" android:layout_toRightOf="@id/sobot_tv_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/sobot_common_gray" android:ellipsize="end" android:id="@id/sobot_tv_descripe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/sobot_tv_icon" android:layout_below="@id/sobot_tv_title" />
+    </RelativeLayout>
+</LinearLayout>

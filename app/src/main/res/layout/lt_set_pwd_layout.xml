@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/item_phone_num" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" layout="@layout/lt_layout_edit" />
+    <include android:id="@id/item_code" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/item_phone_num" layout="@layout/lt_layout_code_edit" />
+    <include android:id="@id/item_password" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/item_code" layout="@layout/lt_layout_edit" />
+    <include android:id="@id/item_password2" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/item_password" layout="@layout/lt_layout_edit" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/red" android:id="@id/password_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="说明：新密码需6-16位，至少包含数字、字母及标点符号中的2种" android:layout_below="@id/item_password2" android:layout_centerHorizontal="true" />
+    <include android:id="@id/item_agreement" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/password_tips" layout="@layout/lt_agreement_bottom_view" />
+</RelativeLayout>

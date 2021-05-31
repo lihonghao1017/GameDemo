@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.security.biometrics.logic.view.widget.TitleBarWidget android:id="@id/widget_title_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/abfl_widget_tb_close" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/face_top_back" android:layout_centerVertical="true" />
+        <View android:id="@id/abfl_widget_tb_close_area" android:layout_width="50.0dip" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/abfl_widget_tb_sound_switch" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/face_top_sound_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/abfl_widget_tb_sound_switch_area" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </com.alibaba.security.biometrics.logic.view.widget.TitleBarWidget>
+</merge>

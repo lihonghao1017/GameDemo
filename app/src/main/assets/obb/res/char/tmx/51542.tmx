@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="9" height="6" tilewidth="24" tileheight="24">
+ <tileset firstgid="1" name="51542_01_b" tilewidth="24" tileheight="24">
+  <image source="../51542_01_b.png" width="216" height="144"/>
+ </tileset>
+ <tileset firstgid="55" name="obstacle" tilewidth="24" tileheight="24">
+  <image source="obstacle.png" width="96" height="96"/>
+ </tileset>
+ <tileset firstgid="71" name="shelter" tilewidth="24" tileheight="24">
+  <image source="shelter.png" width="96" height="96"/>
+ </tileset>
+ <layer name="back" width="9" height="6">
+  <data encoding="base64" compression="zlib">
+   eJwNwwUOwkAAALADhrsOHw5juP3/abRJcyGEvAUji5YsW7FqzboNm7Zs27Frz74Dh46MHTtx6sy5C5cmrly7cevOvQePnkw9m3nx6s27D5++fPvx688/sgcFzg==
+  </data>
+ </layer>
+ <layer name="obstacle" width="9" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYCANmEMxLnFcmFpqkO3GpwYATaIHTw==
+  </data>
+ </layer>
+ <layer name="shelter" width="9" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYIAAdywYGaCLYVMzmAAAzmcCgA==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="29" height="20" tilewidth="24" tileheight="24">
+ <tileset firstgid="1" name="obstacle" tilewidth="24" tileheight="24">
+  <image source="obstacle.png" width="96" height="96"/>
+ </tileset>
+ <tileset firstgid="17" name="10154" tilewidth="24" tileheight="24">
+  <image source="10154.png" width="696" height="480"/>
+ </tileset>
+ <layer name="back" width="29" height="20">
+  <data encoding="base64" compression="zlib">
+   eJwN04OyGAYAAMHXqLFt27Zt27ZtN7Zt27Zt27bZnbn9hIsQEBAQkUhEJgpRiUZ0YhCTWMQmDnGJR3wSkJBEJCYJSUlGclKQklSkJg1pSUd6MpCRTGQmC1nJRnZykJNc5CYPeclHfgpQkEIUpghFKUZxSlCSUpSmDGUpR3kqUJFKVKYKValGdWpQk1rUpg51qUd9GtCQRjSmCU1pRnNa0JJWtKYNbWlHezrQkU50pgtd6UZ3etCTXvSmD33pR38GMJBBDGYIQ/mPYQxnBCMZxWjGMJZxjGcCE5nEZKYwlWlMZwYzmcVs5jCXecxnAQtZxGKWsJRlLGcFK1nFatawlnWsZwMb2cRmtrCVbWxnBzvZxW72sJd97OcABznEYY5wlGMc5wQnOcVpznCWc5znAhe5xGWucJVrXOcGN7nFbe5wl3vc5wEPecRjnvCUZzznBS95xWve8JZ3vOcDH/nEZ77wlW985wc/+cVv/vCXgH9EIAIThKAE41+CE4KQhCI0YQhLOMITgYhEIjJRiEo0ohODmMQiNnGISzzik4CEJCIxSUhKMpKTgpSkIjVpSEs60pOBjGQiM1nISjayk4Oc5CI3echLPvJTgIIUojBFKEoxilOCkpSiNGUoSznKU4GKVKIyVahKNapTg5rUojZ1qEs96tOAhjSiMU1oSjOa04KWtKI1bWhLO9rTgY50ojNd6Eo3utODnvSiN33oSz/6M4CBDGIwQxjKfwxjOCMYyShGM4axjGM8E5jIJCYzhalMYzozmMksZjOHucxjPgtYyCIWs4SlLGM5K1jJKlazhrWsYz0b2MgmNrOFrWxjOzvYyS52s4e97GM/BzjIIQ5zhKMc4zgnOMkpTnOGs5zjPBe4yCUuc4WrXOM6N7jJLW5zh7vc4z4PeMgjHvOEpzzjOS94ySte84a3vOM9H/jIJz7zha984zs/+MkvfvOHvwQE8j+BCEwQghKMfwlOCEISitCEISzhCE8EIhKJyEQhKtGITgxiEovYxCEu8YhPAhKSiMQkISnJSE4KUpKK1KQhLelITwYykonMZCEr2chODnKSi9zkIS/5yE8BClKIwhShKMUoTglKUorSlKEs5ShPBSpSicr8D3dzDiQ=
+  </data>
+ </layer>
+ <layer name="obstacle" width="29" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztk1EKgzAQRE1tg4LV3v+0VcjAMEwkblt/6sLDGOO+bFy77op/j0Sc4XoIv3Ijr/qyeG9fcKmDPezicdSN3GC7HwtPGrNb93HErTWxS1G3+857bnVt6/qVeyGZOQX+Wt3qQ05dV3MNBrcWcwCRzbPaGSHfZHD7wnvoDa2V+6bV/SJcXWDvH25xs3NeWYqTfZyjNdAH6nZOrS2XPUSjVrc7w6N1Rd2RM4y6E13Pik9cbwtgBFQ=
+  </data>
+ </layer>
+</map>

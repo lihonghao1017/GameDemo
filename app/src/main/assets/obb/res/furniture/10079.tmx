@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="9" tilewidth="24" tileheight="24">
+ <tileset firstgid="1" name="obstacle" tilewidth="24" tileheight="24">
+  <image source="obstacle.png" width="96" height="96"/>
+ </tileset>
+ <tileset firstgid="17" name="10079" tilewidth="24" tileheight="24">
+  <image source="10079.png" width="240" height="216"/>
+ </tileset>
+ <layer name="back" width="10" height="9">
+  <data encoding="base64" compression="zlib">
+   eJwNwwk2QgEAAMB/BaFQKGXJUqhQFBIisiSFyBbq/gcw896MBUEQctwJJw0bccppZ4wac9Y5542bcMGkKRddctkV06665robZsy66Zbb5sxbcMdd9yxact8Dy1Y89Mhjq55Y89Qzz6174aUNr7y26Y233nlvywfbPtqx65PPvtjz1Tf7vvvhp19+O/DHX/8cOvIfq/0VoA==
+  </data>
+ </layer>
+ <layer name="obstacle" width="10" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi6gA0JE5LHpg6bPAjz45EHyXEhYXR1ML3oAABD7ADQ
+  </data>
+ </layer>
+</map>

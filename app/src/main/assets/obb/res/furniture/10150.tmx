@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="15" tilewidth="24" tileheight="24">
+ <tileset firstgid="1" name="10150" tilewidth="24" tileheight="24">
+  <image source="10150.png" width="384" height="360"/>
+ </tileset>
+ <tileset firstgid="241" name="obstacle" tilewidth="24" tileheight="24">
+  <image source="obstacle.png" width="96" height="96"/>
+ </tileset>
+ <layer name="back" width="16" height="15">
+  <data encoding="base64" compression="zlib">
+   eJwNwwN3FgAAAMAvG8u2bdcaqlXLtm3btbCWbdu2bdt2/YTu3rtYgUAgtnGMazzjm8CEJjKxSUxqMpObwpQGmcrUpjGt6UxvBjOaycxmMavZzG4Oc5rL3OYxr/nMbwELWsjCFrGoxSxuCUtaytKWsazlLG8FK1rJylaxqtUMtrohhhpmuDWsaS0jrG0d6xppPevbwIY2srFNbGozm9vClraytW1sazvb28GOdrKzXexqN7vbw572srd97Gs/+zvAgQ5ysEMc6jCHO8KRjnK0YxzrOMc7wYlOcrJTnOo0o5zuDGc6y2hnG+Mc5zrP+S5woYtc7BKXuszlrnClq1ztGte6zvVucKOb3OwWt7rN7e5wp7vc7R73us/9HvCghzzsEY96zOOe8KSnPO0Zz3rO817wope87BWves3r3vCmt7ztHe96z/s+8KGPfOwTn/rM577wpa987Rvf+s73fvCjn/zsF7/6ze/+8Ke//O0f//rP/29ScPk=
+  </data>
+ </layer>
+ <layer name="obstacle" width="16" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4Ay8JFETKl+dHMo0UuOGeSGBy0AAHM+NLk=
+  </data>
+ </layer>
+</map>

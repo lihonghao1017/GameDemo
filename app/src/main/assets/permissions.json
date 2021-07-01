@@ -1,0 +1,47 @@
+{
+  "PHONE": {
+    "name": "设备信息",
+    "descript": "读取唯一设备识别符，保障账号使用安全",
+    "icon": "lt_ic_permission_phone"
+  },
+  "STORAGE": {
+    "name": "存储空间",
+    "descript": "实现应用程序对游戏资源及相关文件的缓存与取用",
+    "icon": "lt_ic_permission_storage"
+  },
+  "LOCATION": {
+    "name": "位置信息",
+    "descript": "实现同地域玩家互动，提供蓝牙和定向推送服务，优化网络链路",
+    "icon": "lt_ic_permission_location"
+  },
+  "MICROPHONE": {
+    "name": "麦克风",
+    "descript": "实现游戏语音传输、录屏分享及客服语音功能",
+    "icon": "lt_ic_permission_microphone"
+  },
+  "CAMERA": {
+    "name": "相机权限",
+    "descript": "实现图片传输、二维码扫描及客服传图功能",
+    "icon": "lt_ic_permission_camera"
+  },
+  "CONTACTS": {
+    "name": "通讯录",
+    "descript": "实现好友展示、推荐及邀请功能",
+    "icon": "lt_ic_permission_contacts"
+  },
+  "SMS": {
+    "name": "手机短信",
+    "descript": "用于账号注册、登录、找回密码时读取短信验证码",
+    "icon": "lt_ic_permission_sms"
+  },
+  "CALENDAR": {
+    "name": "日历",
+    "descript": "用于时间提示及客户端安全保护",
+    "icon": "lt_ic_permission_calendar"
+  },
+  "SENSORS": {
+    "name": "传感器",
+    "descript": "实现游戏体感功能",
+    "icon": "lt_ic_permission_sensor"
+  }
+}

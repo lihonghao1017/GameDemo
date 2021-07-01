@@ -1,0 +1,12 @@
+{
+	"client":{
+		"cp_id":"890086000102047661",
+		"product_id":"9105385871708013860",
+		"client_id":"204218867881346176",
+		"client_secret":"1A41AEC5C960C5622B40CF43EA53961FECE64719A345FBCC6285317ECFEC548D",
+		"app_id":"100296651",
+		"package_name":"com.gbits.AsktaoMobile",
+		"api_key":"CV8T9wlS7tIqtzdORMRUoVbts6v+F6w6Zy1oTeA6QIUaFaBdJp+4O4giOjPfodJ6GkX4V0Xmti9FMOFc24C1Wz2SKkXr"
+	},
+	"configuration_version":"1.0"
+}

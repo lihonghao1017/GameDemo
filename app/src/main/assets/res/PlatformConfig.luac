@@ -1,0 +1,13 @@
+local Ver = require("Version")
+return {
+    CUR_VERSION = Ver.VER,  --- 原始包的版号
+    MAIN_URL = "http://update.leiting.com/atm/g-bits/",    -- 下载自动更新基本信息的地址
+	BACKUP_URL = "http://106.14.54.215/atm/g-bits/",  -- 通过MAIN_URL访问失败后的备用地址
+    LOG_URL = 'http://logmonitor.leiting.com/api/mg_log!addMgActivateLog.action',
+    LOG_KEY = '#Leiting#',
+    FULL_CLIENT_KEY = "g-bits",        -- 完整包下载页面链接对应的 key，与 full_client_url.lua 中 key 值对应
+	WX_APP_ID = 'wxd7866b0e0fb11bbc',      --用于配置这个包的渠道所对应的微信开放平台的app id
+    IS_SHARE = true,       --用于配置是否显示分享按钮，默认不显示（true：显示， false：不显示）
+    IS_OFFICIAL = true,      --用于配置是否是官方版本（true：官方版本， false：非官方版本）
+	DNS_URL = {"https://203.107.1.67/192111/d?host=","https://203.107.1.1/192111/d?host=",}
+}
